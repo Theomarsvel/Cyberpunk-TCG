@@ -17,7 +17,6 @@ CREATE TABLE categorie (
 );
 
 
-
 CREATE TABLE carte (
     id_carte INT UNSIGNED AUTO_INCREMENT,
     nom_carte VARCHAR(255) NOT NULL,
