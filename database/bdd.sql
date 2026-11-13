@@ -43,6 +43,7 @@ CREATE TABLE statistique (
     ram INT UNSIGNED,
     power INT UNSIGNED,
     effet VARCHAR(100),
+    rareter varchar(50),
 
     CONSTRAINT pk_statistique
         PRIMARY KEY (id_statistique),
