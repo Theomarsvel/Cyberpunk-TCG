@@ -1,4 +1,20 @@
 <?php
+$nomSite = "Cyberpunk-TCG";
+
+$livres = [
+    // vos données...
+];
+
+require __DIR__ . '/../includes/header.php';
+?>
+
+<h1><?= $nomSite ?></h1>
+
+<!-- votre foreach et votre affichage -->
+
+<?php require __DIR__ . '/../includes/footer.php'; ?>
+
+<?php
 
 $titrePage = "Liste des cartes";
 
