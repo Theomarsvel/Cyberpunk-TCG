@@ -20,21 +20,11 @@ $titrePage = "Liste des cartes";
 
 $categories = ["Carte", "Pack d'emarage", "Kit deck"];
 
-$cartes = [[
-    'nom' => 'la relic',
-    'type' => 'gear',
-    'disponibilite' => true 
-],
-[
-    'nom' => 'v',
-    'type' => 'legend',
-    'disponibilite' => true 
-],
-[
-    'nom' => 'screw',
-    'type' => 'unit',
-    'disponibilite' => true 
-]];
+$cartes = [
+    ['id' => 1, 'nom' => 'la relic', 'type' => 'gear',   'disponibilite' => true],
+    ['id' => 2, 'nom' => 'v',        'type' => 'legend', 'disponibilite' => true],
+    ['id' => 3, 'nom' => 'screw',    'type' => 'unit',   'disponibilite' => true]
+];
 
 $categories[] = "Booster";
 
@@ -47,7 +37,8 @@ $cartes[0]["cout"] = "5 edits";
 
 
 <?php foreach($cartes as $carte) { ?>
-    <h2><?= $carte ['nom'] ?></h2>
+    <h2><?= $carte ["id"] ?></h2>
+    <h3><?= $carte ['nom'] ?></h3>
     <p>Type de la carte : <?= $carte ['type'] ?></p> 
 <?php if ($carte['disponibilite']) { ?>
     <p>Disponibilite</p>
